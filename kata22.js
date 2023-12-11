@@ -12,9 +12,7 @@ const foodSchedule = [
 ];
 
 for (i = 0; i < foodSchedule.length; i++) {
-  //console.log(foodSchedule[i].name);
   if (foodSchedule[i].isVegan === false) {
-    //console.log(foodSchedule[i].name)
     foodSchedule[i].name = fruits.pop();
     foodSchedule[i].isVegan = true;
   }
