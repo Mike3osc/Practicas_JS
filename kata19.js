@@ -10,3 +10,10 @@ const toys = [
   { id: 40, name: 'El gato felix' }
 ]
 
+for (let i = toys.length - 1; i >= 0; --i) {
+  if (toys[i].name.includes("gato")) {
+    toys.splice(i, 1);
+  }
+}
+
+console.log(toys);
