@@ -15,10 +15,9 @@ const adult = [];
 
 for (const user of users) {
   if (user.years < 18) {
-    minor.push(user);
-  }
-  if (user.years >= 18) {
-    adult.push(user);
+    minor.push(user.name);
+  } else {
+    adult.push(user.name);
   }
 }
 
